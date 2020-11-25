@@ -44,5 +44,12 @@ namespace NativeModuleSample
                 }
             };
         }
+
+        [ReactConstantProvider]
+        public void Constant5(ReactConstantProvider provider)
+        {
+            provider.Add("const51", new Point { X = 12, Y = 14 });
+            provider.Add("const52", "MyConstant52");
+        }
     }
 }
